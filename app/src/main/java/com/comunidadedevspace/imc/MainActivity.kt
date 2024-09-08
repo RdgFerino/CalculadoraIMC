@@ -1,8 +1,10 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.activity.result.contract.ActivityResultContracts
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 
@@ -10,13 +12,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        //Recuperar os componentes EditText
-        //Criar uma variável e associar o componente de UI <EditText>
-        //Recuperar o botão da tela
-        //colocar ação no botão setonclicklistener
-        //recuperar o texto digitado no edit peso
-
 
         val edtpeso = findViewById<TextInputEditText>(R.id.edit_text_Peso)
         val edtaltura = findViewById<TextInputEditText>(R.id.edit_text_Altura)
@@ -28,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             val alturaStr: String = edtaltura.text.toString()
 
             if(pesoStr == "" || alturaStr == ""){
-                //Mostrar mensagem ao usuário
+
                 Snackbar
                     .make(
                         edtpeso,
@@ -44,6 +39,15 @@ class MainActivity : AppCompatActivity() {
 
                 val alturaQ2 = altura * altura
                 val resultado = peso / alturaQ2
+
+                //Navegar para a próxima tela
+                //Criar o layout da próxima tela
+                //Passar dados (resultado) para a próxima tela
+                //Intent - classe do próprio android e pode ser implicita ou explicita
+
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra(KEY_RESULT_IMC, resultado)
+                startActivity(intent)
 
                 println("Raoni ação do botão" + resultado)
             }
