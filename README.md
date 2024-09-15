@@ -1,19 +1,31 @@
 # Calculadora IMC
-Desc
+Aplicativo Android Nativo desenvolvido com a linguagem de programação KOTLIN. O aplicativo apresenta-se como uma solução para aqueles usuários que desejam calcular seu IMC, contribuindo para um controle do peso corporal e uma eventual mudança de hábitos e melhora da qualidade de vida.
 
 ## :camera_flash: Screenshots
-<!-- You can add more screenshots here if you like -->
-Screenshots
+<img src="https://github.com/user-attachments/assets/86176a84-f86b-4cc0-9743-0dc4fea0ace2" width= 160/>
+<img src="https://github.com/user-attachments/assets/57461700-9164-4bd3-ace1-fbb615f2707e" width= 160/>
+
+
 
 ## Tecnologias
-Techs
+- Activity
+- Intent
+- View Group
+  - LinearLayout
+  - ConstraintLayout
+ - Snackbar
+ - Views
+   - ImageView
+   - TextView
+   - Button
+   - EditText
 
 
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2023 Roque Buarque Junior
+Copyright (c) 2024 Raoni Gomes Oliveira Ferino
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
