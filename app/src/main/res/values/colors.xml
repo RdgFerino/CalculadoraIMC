@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_400">#cd00ea</color>
+    <color name="primary_900">#5c00d2</color>
+    <color name="classificacao">#4285F4</color>
+
+
+    <color name="red">#A50E0E</color>
+    <color name="green">#0D652D</color>
+    <color name="yellow">#FBBC04</color>
+    <color name="oranje">#E37400</color>
+
 </resources>
